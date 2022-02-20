@@ -1,38 +1,130 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(120deg, #a5dcb9 0%, #53585b 100%);
+  height: 400vh;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+.toolbar a:link {
+  cursor: pointer;
+  text-decoration: none;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.toolbar a:hover{
+  transform: scale(1.1);
+  transition: 0.1s;
+  color: #c4d9ad;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.toolbar a{
+  color: white;
+  font-size: xx-large;
+}
+
+.toolbar {
+  height: 8vh;
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(-20deg, #504f4f 0%, #82a8a5 100%);
+  /*box-shadow: 10px 10px 5px #aaaaaa;*/
+  box-shadow: 0px 3px 10px 5px rgba(58, 51, 51, 0.5);
+  margin: 20px;
+}
+
+.createRecipeCard{
+  width: 600px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  align-items: start;
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0px 3px 10px 5px rgba(58, 51, 51, 0.5);
+
+}
+
+.createRecipeCard img {
+  width: 200px;
+}
+
+.createRecipeCard input {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.createRecipeCard input:hover{
+  transform: scale(1.02);
+  transition: 0.1s;
+
+}
+
+.createRecipeCard button {
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+
+}
+
+.createRecipeCard button:hover{
+  transform: scale(1.1);
+  transition: 0.1s;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.j-center{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.grow1 {
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gow2 {
+  flex: 2;
+}
+
+.j-start {
+  justify-content: start;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.recipeCard {
+  width: 300px;
+  display: flex;
+  padding: 20px;
+  margin: 10px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  border-radius: 15px;
+
+}
+
+.recipeCard img{
+  width: 250px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.FavoritesPage {
+  display: flex;
+  flex-wrap: wrap;
 }
