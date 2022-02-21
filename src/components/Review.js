@@ -10,11 +10,11 @@ const Review = ({x}) => {
 
     function addReview(x) {
         if (value > 0 && reviewText.current.value.length > 0) {
-            x.allRating.push(value)
-            const finalRating = x.allRating.reduce((previousValue, currentValue) => previousValue + currentValue);
-            x.review.push({rating: value, reviewText: reviewText.current.value})
+            x.rating.push(value)
+            const finalRating = x.rating.reduce((previousValue, currentValue) => previousValue + currentValue);
+            x.review.push({reviewRating: value, reviewText: reviewText.current.value})
             setRecipe([...getRecipe])
-            x.averageRating = Math.round(finalRating / x.allRating.length)
+            x.averageRating = Math.round(finalRating / x.rating.length)
         }
         setValue(null)
         return reviewText.current.value = ""

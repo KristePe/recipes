@@ -58,25 +58,25 @@ const SingleRecipeView = () => {
 
 
 
+               <Review x={viewRecipe}/>
 
-                <div className="flex column j-center a-items-center a-cont-center">
+                <div className="d-flex column j-center">
 
-                    {viewRecipe.review.map((x, i) => {
-                        return(
+                    {viewRecipe.review.map((x, i) =>
+
                             <div className="reviewToRead" key={i}>
                                 <div>
-                                    <Review x={x} index={i}/>
-                                    <Rating name="read-only" value={viewRecipe.rating} readOnly/>
+                                    <Rating name="read-only" value={x.reviewRating} readOnly/>
                                 </div>
                                 <div>{x.reviewText}</div>
                             </div>)}
-                    )
-                    }
-
-
-
-
                 </div>
+
+
+
+
+
+
             </div>
 
 
