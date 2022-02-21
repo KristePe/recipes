@@ -1,6 +1,6 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import {useState} from "react";
+import {useContext, useState} from "react";
 import mainContext from "./context/mainContext";
 import Toolbar from "./context/Toolbar";
 import CreateRecipePage from "./pages/CreateRecipePage";
@@ -23,6 +23,12 @@ function App() {
     const [getRecipe, setRecipe] = useState([])
     const [value, setValue] = useState(null)
     const [getByRating, setByRating] = useState("")
+    const [getByIngredient, setByIngredient] = useState("")
+    const [getByIngredNum, setByIngredNum] = useState("")
+    const [getByPrepTime, setByPrepTime] = useState("")
+    const [getByReviewNum, setByReviewNum] = useState("")
+
+
 
 
 
@@ -38,7 +44,12 @@ function App() {
                   getError, setError,
                   value, setValue,
                   getByRating, setByRating,
-                  getRecipe, setRecipe
+                  getRecipe, setRecipe,
+                  getByIngredient, setByIngredient,
+                  getByIngredNum, setByIngredNum,
+                  getByPrepTime, setByPrepTime,
+                  getByReviewNum, setByReviewNum
+
               }}>
 
 

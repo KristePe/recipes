@@ -128,3 +128,17 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.filterCard {
+  height: 50px;
+  border: 1px solid black;
+  background-color: darkseagreen;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.filterInput {
+  height: 20px;
+}
